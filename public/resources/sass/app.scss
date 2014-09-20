@@ -1,7 +1,7 @@
 @import 'flex';
 
 body {
-	font-family: "Avenir-Book", Helvetica;
+	font-family: "Avenir-Book", "Segoe UI", Helvetica;
 	margin: 0;
 }
 
@@ -31,6 +31,7 @@ h1, h2, h3, h4 {
 	height: auto;
 	width: 100%;
 	max-height: 85vh;
+	visibility: hidden;
 }
 
 .header h1 {
@@ -45,13 +46,13 @@ h1, h2, h3, h4 {
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "AvenirNext-DemiBold", Helvetica;
+	font-family: "AvenirNext-DemiBold", "Segoe UI", Helvetica;
 }
 
 .header h1 span {
 	display: block;
 	font-size: 15px;
-	font-family: "Avenir-Light", sans-serif;
+	font-family: "Avenir-Light", "Segoe UI", sans-serif;
 	color: rgba(255,255,255,.5);
 }
 
@@ -67,7 +68,7 @@ h1, h2, h3, h4 {
 	background-size: 140px;
 	background-position: center;
 	text-align: center;
-	font-family: "Avenir-Light", sans-serif;
+	font-family: "Avenir-Light", "Segoe UI", sans-serif;
 	font-size: 10px;
 	color: rgba(255,255,255,.5);
 }
@@ -92,13 +93,13 @@ h1, h2, h3, h4 {
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
-	font-family: "AvenirNext-DemiBold", Helvetica;
+	font-family: "AvenirNext-DemiBold", "Segoe UI", Helvetica;
 }
 
 .header h2 span {
 	display: block;
 	font-size: 13px;
-	font-family: "Avenir-Light", sans-serif;
+	font-family: "Avenir-Light", "Segoe UI", sans-serif;
 	color: rgba(255,255,255,.5);
 }
 
@@ -115,7 +116,7 @@ h1, h2, h3, h4 {
 	background-size: 150px;
 	background-position: center;
 	text-align: center;
-	font-family: "Avenir-Light", sans-serif;
+	font-family: "Avenir-Light", "Segoe UI", sans-serif;
 	font-size: 10px;
 	color: rgba(255,255,255,.5);
 }
@@ -178,7 +179,7 @@ h1, h2, h3, h4 {
 	text-align: center;
 	text-transform: uppercase;
 	line-height: 40px;
-	font-family: "Avenir-Light", sans-serif;
+	font-family: "Avenir-Light", "Segoe UI", sans-serif;
 }
 
 /* Text */
@@ -205,7 +206,7 @@ section {
 
 section h3 {
 	position: relative;
-	font-family: "AvenirNext-DemiBold";
+	font-family: "AvenirNext-DemiBold", "Segoe UI";
 	text-transform: uppercase;
 	border-bottom: 1px solid #ddd;
 	font-size: 22px;
@@ -225,7 +226,7 @@ section#bikes .container {
 
 section#bikes .container header {
 	text-align: center;
-	font-family: "AvenirNext-DemiBold";
+	font-family: "AvenirNext-DemiBold", "Segoe UI";
 	text-transform: uppercase;
 	padding: 10px 0 0;
 	font-size: 22px;
@@ -289,7 +290,7 @@ section#stats h3 {
 #stats table th {
 	text-transform: uppercase;
 	/*line-height: 30px;*/
-	font-family: "AvenirNext-DemiBold";
+	font-family: "AvenirNext-DemiBold", "Segoe UI";
 	padding-bottom: 5px;
 }
 
@@ -302,7 +303,7 @@ section#stats h3 {
 #stats table td:first-child {
 	text-align: right;
 	color: rgba(0,0,0,.3);
-	font-family: "AvenirNext-DemiBold";
+	font-family: "AvenirNext-DemiBold", "Segoe UI";
 }
 
 section#stats h3 .buttons {
@@ -334,7 +335,7 @@ section#stats h3 .buttons span.active {
 .days-loading {
 	text-align: center;
 	margin: 100px 0;
-	font-family: "Avenir-Book";
+	font-family: "Avenir-Book", "Segoe UI";
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #aaa;
@@ -364,7 +365,7 @@ section#stats h3 .buttons span.active {
 }
 
 .day .locations {
-	font-family: "Avenir-Book";
+	font-family: "Avenir-Book", "Segoe UI";
 	text-transform: uppercase;
 	color: #ccc;
 	font-size: 10px;
@@ -406,13 +407,13 @@ section#stats h3 .buttons span.active {
 /* Maps */
 .leaflet-popup-content {
 	color: #000;
-	font-family: "AvenirNext-DemiBold", Helvetica;
+	font-family: "AvenirNext-DemiBold", "Segoe UI", Helvetica;
 	font-size: 14px;
 }
 
 .leaflet-popup-content a {
 	color: #000;
-	font-family: "AvenirNext-DemiBold", Helvetica;
+	font-family: "AvenirNext-DemiBold", "Segoe UI", Helvetica;
 	text-decoration: none;
 }
 
