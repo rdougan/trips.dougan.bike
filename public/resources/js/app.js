@@ -480,7 +480,7 @@ var downloadRides = function(callback) {
 
 	       return xhr;
 	    },
-	    url: "days.json",
+	    url: "resources/json/days.json",
 	    success: function(data) {
 	        callback(data);
 	    }
