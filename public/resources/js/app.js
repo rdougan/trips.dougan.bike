@@ -21,6 +21,10 @@ $(function() {
 	$(window).scroll(onScroll);
 	$.stellar();
 
+	if (isMobile) {
+		$('.header .twitter').show();
+	}
+
 	var dayTemplate = Handlebars.compile($("#day-template").html()),
 		allCoords = [];
 
@@ -573,6 +577,10 @@ var onScroll = function() {
 
 	for (var i = 0; i < imagesToUnload.length; i++) {
 		unloadImage(imagesToUnload[i]);
+	}
+
+	if (isMobile) {
+		return;
 	}
 
 	if (scrollY > (headerHeight - 60)) {
