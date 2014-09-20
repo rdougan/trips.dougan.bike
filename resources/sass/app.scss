@@ -1,0 +1,530 @@
+@import 'flex';
+
+body {
+	font-family: "Avenir-Book", Helvetica;
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+.preload {
+	position: absolute;
+	top: -100px
+}
+
+/* Header */
+
+.header {
+	position: relative;
+	background-repeat: no-repeat;
+	background-image: inline-image('header.jpg');
+	background-size: 100% auto;
+	background-attachment: fixed;
+	max-height: 85vh;
+}
+
+.header img {
+	height: auto;
+	width: 100%;
+	max-height: 85vh;
+}
+
+.header h1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 65px 0 0 0;
+	font-size: 50px;
+	line-height: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "AvenirNext-DemiBold", Helvetica;
+}
+
+.header h1 span {
+	display: block;
+	font-size: 15px;
+	font-family: "Avenir-Light", sans-serif;
+	color: rgba(255,255,255,.5);
+}
+
+.header h1:before {
+	content: 'presents';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: 25px;
+	background-image: inline-image('dougiionducati-white.png');
+	background-repeat: no-repeat;
+	background-size: 140px;
+	background-position: center;
+	text-align: center;
+	font-family: "Avenir-Light", sans-serif;
+	font-size: 10px;
+	color: rgba(255,255,255,.5);
+}
+
+/* Footer */
+
+.footer {
+	padding: 15px;
+	font-size: 10px;
+	background: #333;
+	color: #999;
+	text-align: center;
+}
+
+.footer a {
+	color: #bbb;
+	text-decoration: none;
+}
+
+.blocks {
+	margin-top: 60px;
+}
+
+.blocks > a {
+	display: block;
+	height: 150px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.dougiionducati {
+	background-color: #e10b29;
+	background-image: inline-image('dougiionducati-white.png');
+	background-size: 70%;
+}
+
+.ridescorpio {
+	background-color: #000;
+	background-image: inline-image('ridescorpio.png');
+	background-size: 150px;
+	color: #888;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 40px;
+	font-family: "Avenir-Light", sans-serif;
+}
+
+/* Text */
+
+p {
+	padding: 20px 20px 35px;
+	max-width: 900px;
+	font-size: 18px;
+	margin: 0 auto;
+
+}
+
+p.intro {
+	margin-bottom: 40px;
+	padding: 60px 20px 0;
+	text-align: center;
+	line-height: 30px;
+}
+
+/* Sections */
+section {
+	margin-bottom: 100px;
+}
+
+section h3 {
+	position: relative;
+	font-family: "AvenirNext-DemiBold";
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+	font-size: 22px;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 10px 20px 0;
+}
+
+/* Bikes */
+section#bikes h3 {
+	margin-bottom: 20px;
+}
+
+section#bikes .container {
+	padding: 0 20px;
+}
+
+section#bikes .container header {
+	text-align: center;
+	font-family: "AvenirNext-DemiBold";
+	text-transform: uppercase;
+	padding: 10px 0 0;
+	font-size: 22px;
+	color: #000;
+}
+
+section#bikes .container div div {
+	text-align: center;
+	color: #888;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+section#bikes > div a {
+	display: inline-block;
+	margin: 0 5px;
+	color: #888;
+	text-decoration: none;
+}
+
+section#bikes > div a span {
+	display: block;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 3px 8px;
+	margin-top: 3px;
+	background: #59adeb;
+}
+
+section#bikes > div a:hover {
+	position: relative;
+	top: 1px;
+}
+
+section#bikes > div img {
+	width: 100%;
+}
+
+/* Stats */
+section#stats h3 {
+	margin-bottom: 20px;
+}
+
+#stats .container > div {
+	background: #eaeaea;
+}
+
+#stats .container .fuel {
+	background: #f0f0f0;
+}
+
+#stats .container > * {
+	padding: 10px;
+}
+
+#stats table {
+	width: 100%;
+}
+
+#stats table th {
+	text-transform: uppercase;
+	/*line-height: 30px;*/
+	font-family: "AvenirNext-DemiBold";
+	padding-bottom: 5px;
+}
+
+#stats table td {
+	width: 50%;
+	line-height: 30px;
+	padding: 0 5px;
+}
+
+#stats table td:first-child {
+	text-align: right;
+	color: rgba(0,0,0,.3);
+	font-family: "AvenirNext-DemiBold";
+}
+
+section#stats h3 .buttons {
+	float: right;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+section#stats h3 .buttons span {
+	background: #eee;
+	color: rgba(0, 0, 0, .5);
+	margin-left: 10px;
+	padding: 4px 12px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+section#stats h3 .buttons span.active {
+	background: rgba(255, 11, 41, .1);
+}
+
+#map-entire {
+	height: 400px;
+	position: relative;
+}
+
+/* Days */
+
+.days-loading {
+	text-align: center;
+	margin: 100px 0;
+	font-family: "Avenir-Book";
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #aaa;
+}
+
+.day.active header:first-child {
+	visibility: hidden;
+}
+
+.day header {
+	margin: 140px 0 10px;
+}
+
+.day header.sticky {
+	margin-top: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	background: rgba(255,255,255,.9);
+}
+
+.day h3 .distance {
+	float: right;
+	color: #999;
+}
+
+.day .locations {
+	font-family: "Avenir-Book";
+	text-transform: uppercase;
+	color: #ccc;
+	font-size: 10px;
+	text-align: center;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 5px 20px 10px;
+}
+
+.day .locations span {
+	color: #999;
+}
+
+.map {
+	margin: 10px 0 20px 0;
+	height: 250px;
+    width: 100%;
+}
+
+.image,
+.image-row {
+	margin: 0 20px 20px;
+}
+
+.image img,
+.image-row img {
+	width: 100%;
+	display: block;
+	background-color: #f0f0f0;
+	background-image: inline-image('loading.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.image-row img:first-child {
+	margin-bottom: 20px;
+}
+
+/* Maps */
+.leaflet-popup-content {
+	color: #000;
+	font-family: "AvenirNext-DemiBold", Helvetica;
+	font-size: 14px;
+}
+
+.leaflet-popup-content a {
+	color: #000;
+	font-family: "AvenirNext-DemiBold", Helvetica;
+	text-decoration: none;
+}
+
+.leaflet-popup-content a:hover {
+	text-decoration: underline;
+}
+
+/* Screens */
+
+@media only screen and (min-width: 550px) {
+	section#bikes .container {
+		@include flexbox();
+	}
+
+	section#bikes .container > div {
+		@include flex(1 auto);
+		margin-right: 20px;
+	}
+
+	section#bikes .container > div:last-child {
+		margin-right: 0;
+	}
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+	.header h1 {
+    	font-size: 90px;
+    	padding-top: 120px;
+    	line-height: 50px;
+    }
+
+    .header h1:before {
+    	top: 5px;
+    	padding-top: 40px;
+    	background-size: 200px;
+    	font-size: 14px;
+    }
+
+    .header h1 span {
+    	font-size: 20px;
+    }
+
+    p {
+    	padding: 0 0 50px;
+		margin: 0 auto;
+		font-size: 22px;
+	}
+
+	p.intro {
+		margin-bottom: 100px;
+    	padding: 100px 0 0;
+    	line-height: 40px;
+	}
+
+    section h3 {
+    	font-size: 40px;
+    	line-height: 35px;
+    	width: 90%;
+    	margin: 0 auto;
+    	padding: 10px 0;
+    }
+
+    section#bikes {
+    	width: 90%;
+    	margin: 0 auto;
+    }
+
+	section#bikes .container header {
+		font-size: 20px;
+	}
+
+	section#stats .container {
+    	@include flexbox();
+    	@include flex-wrap(wrap);
+	}
+
+	section#stats .container > * {
+    	width: auto;
+    	@include flex(1 45%);
+	}
+
+	section#stats .total {
+		@include order(1);
+	}
+
+	section#stats .fuel {
+    	@include order(2);
+	}
+
+	#map-entire {
+		@include order(3);
+	}
+
+    .day header {
+    	margin-top: 180px;
+    }
+
+    .day .locations {
+    	font-size: 16px;
+    	text-align: left;
+    	width: 90%;
+    	margin: 0 auto;
+    	padding: 10px 0;
+    }
+
+    .map {
+    	margin: 30px 0 60px 0;
+    	height: 500px;
+    }
+
+    .image,
+    .image-row {
+    	width: 95%;
+    }
+
+    .image-row {
+    	position: relative;
+    }
+
+    .image-row img {
+    	width: 49%;
+    	display: inline-block;
+    }
+
+    .image-row img:first-child {
+    	margin-bottom: 0;
+    }
+
+    .image-row img:last-child {
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    }
+
+    .footer {
+    	font-size: 12px;
+    }
+
+    .blocks {
+    	margin-top: 100px;
+    	@include flexbox();
+    	align-items: stretch;
+    }
+
+    .blocks > a {
+    	height: 200px;
+    	width: auto;
+    	@include flex(1);
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+    .header h1 {
+    	padding-top: 130px;
+    	font-size: 110px;
+    	line-height: 60px;
+    }
+
+    #bikes,
+    .image,
+    .image-row {
+    	max-width: 1200px;
+    	margin: 0 auto 20px auto;
+    }
+
+    #map-entire {
+    	height: 700px;
+    }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) {
+    .header h1 {
+    	top: 50px;
+    }
+}
