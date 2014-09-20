@@ -493,7 +493,9 @@ var initedScroll = false,
 	imageIds,
 	imagePositionsArray,
 	imageMap,
-	windowHeight;
+	windowHeight,
+	headerHeight,
+	clonedHeader;
 
 var initScroll = function() {
 	imagePositionsArray = [];
@@ -502,6 +504,7 @@ var initScroll = function() {
 	imageIds = [];
 	headerPositions = [];
 	windowHeight = $(window).height();
+	headerHeight= $('.header').height();
 
 	var index = 0;
 
@@ -570,6 +573,34 @@ var onScroll = function() {
 
 	for (var i = 0; i < imagesToUnload.length; i++) {
 		unloadImage(imagesToUnload[i]);
+	}
+
+	if (scrollY > (headerHeight - 60)) {
+		if (!clonedHeader) {
+			$('.header .twitter').hide();
+
+			clonedHeader = $('.header').clone();
+			clonedHeader.addClass('sticky');
+
+			clonedHeader.children('h1').remove();
+			clonedHeader.append('<h2>Norway<span>September 2014</span></h2>');
+			clonedHeader.children('h2').hide();
+
+			$('body').append(clonedHeader);
+
+			$('.header.sticky .twitter').show();
+			clonedHeader.children('h2').fadeIn();
+		}
+	}
+	else if (clonedHeader) {
+		$('.header .twitter').show();
+		$('.header.sticky .twitter').hide();
+
+		clonedHeader.css('background-image', 'none');
+		clonedHeader.fadeOut(function() {
+			clonedHeader.remove();
+			clonedHeader = null;
+		});
 	}
 }
 

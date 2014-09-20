@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Norway</title>
+		<title>Dougii on Ducati - Norway 2014</title>
 
+		<!-- 
+		hi there. this code isn't clean. :( but hey, it works.. (i think)
+		
+		uncompressed javascript is at resources/js/app.js
+		 -->
+
+		<!-- mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
 		<!-- libs -->
@@ -11,6 +18,11 @@
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
         <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 	    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+	    <!-- twitter -->
+	    <script>
+	    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "twitter-wjs");
+	    </script>
 
 		<!-- app -->
 		<link rel="stylesheet" type="text/css" href="resources/css/app.css" />
@@ -27,6 +39,8 @@
 		<div data-stellar-background-ratio="0.5" class="header">
 			<h1>Norway<span>September 2014</span></h1>
 			<img src="resources/images/header-spacer.gif" />
+
+			<a href="https://twitter.com/intent/tweet?button_hashtag=dougiionducati&url=http://rides.dougan.bike/norway" class="twitter" data-related="rdougan,mrsdougan"></a>
 		</div>
 
 		<p class="intro">
@@ -170,5 +184,15 @@
 			</div>
 		</script>
 
+		<!-- analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-54106055-2', 'auto');
+		  ga('send', 'pageview');
+		</script>
 	</body>
 </html>

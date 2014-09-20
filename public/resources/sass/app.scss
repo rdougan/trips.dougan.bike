@@ -72,6 +72,69 @@ h1, h2, h3, h4 {
 	color: rgba(255,255,255,.5);
 }
 
+.header.sticky {
+	height: 60px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.header h2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 15px 0 0;
+	font-size: 25px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "AvenirNext-DemiBold", Helvetica;
+}
+
+.header h2 span {
+	display: block;
+	font-size: 13px;
+	font-family: "Avenir-Light", sans-serif;
+	color: rgba(255,255,255,.5);
+}
+
+.header h2:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 180px;
+	height: 40px;
+	padding-top: 18px;
+	background-image: inline-image('dougiionducati-white.png');
+	background-repeat: no-repeat;
+	background-size: 150px;
+	background-position: center;
+	text-align: center;
+	font-family: "Avenir-Light", sans-serif;
+	font-size: 10px;
+	color: rgba(255,255,255,.5);
+}
+
+.header .twitter {
+	display: none;
+	z-index: 10;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	width: 70px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: inline-image('twitter.png');
+	background-size: 30px;
+}
+
 /* Footer */
 
 .footer {
