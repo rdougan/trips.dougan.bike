@@ -620,7 +620,7 @@ var loadImage = function(imageId) {
 	loadedMap.push(imageId);
 
 	var el = document.getElementById(imageId);
-	el.setAttribute('src', el.getAttribute('data-original'));
+	el.setAttribute('src', el.getAttribute(isMobile ? 'data-small' : 'data-original'));
 
 	// console.log('loaded', imageId, loadedMap.length, Math.round(loadedMap.length / imagePositionsArray.length * 100) + '%');
 }

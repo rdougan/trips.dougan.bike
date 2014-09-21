@@ -165,18 +165,18 @@
 				<div class="image-row">
 					{{#each this}}
 					{{#ifObject this}}
-					<img class="lazy" data-spacer="resources/images/spacer-{{type}}.gif" src="resources/images/spacer-{{type}}.gif" data-original="resources/images/{{../../../../date}}/{{id}}.jpg" />
+					<img class="lazy" data-spacer="resources/images/spacer-{{type}}.gif" src="resources/images/spacer-{{type}}.gif" data-original="resources/images/large/{{../../../../date}}/{{id}}.jpg" data-small="resources/images/medium/{{../../../../date}}/{{id}}.jpg" />
 					{{else}}
-					<img class="lazy" data-spacer="resources/images/spacer-landscape.gif" src="resources/images/spacer-landscape.gif" data-original="resources/images/{{../../../../date}}/{{this}}.jpg" />
+					<img class="lazy" data-spacer="resources/images/spacer-landscape.gif" src="resources/images/spacer-landscape.gif" data-original="resources/images/large/{{../../../../date}}/{{this}}.jpg" data-small="resources/images/medium/{{../../../../date}}/{{this}}.jpg" />
 					{{/ifObject}}
 					{{/each}}
 				</div>
 				{{else}}
 				<div class="image">
 					{{#ifObject this}}
-					<img class="lazy" data-spacer="resources/images/spacer-{{type}}.gif" src="resources/images/spacer-{{type}}.gif" data-original="resources/images/{{../../../date}}/{{id}}.jpg" />
+					<img class="lazy" data-spacer="resources/images/spacer-{{type}}.gif" src="resources/images/spacer-{{type}}.gif" data-original="resources/images/large/{{../../../date}}/{{id}}.jpg" data-small="resources/images/medium/{{../../../date}}/{{id}}.jpg" />
 					{{else}}
-					<img class="lazy" data-spacer="resources/images/spacer-landscape.gif" src="resources/images/spacer-landscape.gif" data-original="resources/images/{{../../../date}}/{{../this}}.jpg" />
+					<img class="lazy" data-spacer="resources/images/spacer-landscape.gif" src="resources/images/spacer-landscape.gif" data-original="resources/images/large/{{../../../date}}/{{../this}}.jpg" data-small="resources/images/medium/{{../../../date}}/{{../this}}.jpg" />
 					{{/ifObject}}
 				</div>
 				{{/ifArray}}
