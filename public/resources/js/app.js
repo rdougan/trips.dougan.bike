@@ -336,8 +336,9 @@ var addMap = function(i, coordinates) {
 		$(".leaflet-control-zoom").css("visibility", "hidden");
 	}
 
-	L.tileLayer('http://{s}.tiles.mapbox.com/v3/rdougan.jhla8dk6/{z}/{x}/{y}.png', {
-	    maxZoom: 18
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	    maxZoom: 18,
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 
 	var feature = {
