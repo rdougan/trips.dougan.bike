@@ -554,8 +554,8 @@ var onScroll = function() {
 		imagesToLoad = [],
 		imagesToUnload = imageIds.slice(0);
 
-	currentImageY = scrollY - windowHeight;
-	loadingHeight = Math.min(currentImageY + (windowHeight * 2) + loadSize, imagePositionsArray[imagePositionsArray.length - 1] + 1);
+	currentImageY = Math.round(scrollY - windowHeight);
+	loadingHeight = Math.round(Math.min(currentImageY + (windowHeight * 2) + loadSize, imagePositionsArray[imagePositionsArray.length - 1] + 1));
 
 	for (var i = currentImageY; i < loadingHeight; i++) {
 		if (!imageMap[i]) {
