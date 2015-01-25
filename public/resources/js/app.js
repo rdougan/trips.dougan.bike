@@ -273,7 +273,9 @@ $(function() {
 
 		addMap('entire', allCoords);
 
-		initScroll();
+		setTimeout(function() {
+			initScroll();
+		}, 250);
 
 		$(window).resize(function() {
 			doScroll = true;
@@ -579,6 +581,8 @@ var onScroll = function() {
 	for (var i = 0; i < imagesToUnload.length; i++) {
 		unloadImage(imagesToUnload[i]);
 	}
+
+	_imagesToLoad = imagesToLoad;
 
 	if (isMobile) {
 		return;
